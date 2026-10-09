@@ -1,0 +1,39 @@
+{
+  "name": "pixel-art-ds",
+  "version": "1.0.0",
+  "description": "Accessibility-focused pixel-art design system playground for web interfaces and cross-platform design tokens.",
+  "private": true,
+  "type": "module",
+  "keywords": [
+    "design-system",
+    "pixel-art",
+    "react",
+    "react-native",
+    "wcag",
+    "accessibility",
+    "ui-kit",
+    "tokens",
+    "design-tokens",
+    "retro",
+    "8bit",
+    "game-ui"
+  ],
+  "license": "MIT",
+  "author": "Pixel Art DS contributors",
+  "homepage": "https://github.com/efesodavila/pixel-art-ds#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efesodavila/pixel-art-ds.git"
+  },
+  "bugs": {
+    "url": "https://github.com/efesodavila/pixel-art-ds/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "npx --yes serve .",
+    "tokens:validate": "node scripts/validate-tokens.js",
+    "tokens:check-contrast": "node scripts/check-contrast.js"
+  }
+}

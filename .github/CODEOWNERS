@@ -1,0 +1,16 @@
+# Default reviewer
+* @efesodavila
+
+# Tokens require extra review (a11y impact)
+/tokens/                @efesodavila
+
+# Accessibility scripts and audit page
+/scripts/check-contrast.js   @efesodavila
+/src/AccessibilityPage.jsx   @efesodavila
+
+# Documentation
+*.md                    @efesodavila
+
+# Release infrastructure
+/.github/workflows/     @efesodavila
+/package.json           @efesodavila

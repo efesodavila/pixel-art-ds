@@ -1,0 +1,36 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Build output
+dist/
+build/
+.next/
+.turbo/
+out/
+
+# Coverage / cache
+coverage/
+.cache/
+.eslintcache
+.nyc_output/
+
+# Env
+.env
+.env.local
+.env.*.local
+
+# Lockfiles (decide one in the team — leave package-lock for now)
+yarn.lock
+pnpm-lock.yaml
+
+# Local user uploads (docs site)
+uploads/

@@ -1,0 +1,22 @@
+name: CI
+
+on:
+  push: { branches: [main] }
+  pull_request: { branches: [main] }
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20, cache: npm }
+      - run: npm ci || npm install
+      - name: Validate tokens.json schema
+        run: node scripts/validate-tokens.js
+      - name: WCAG contrast gate
+        run: node scripts/check-contrast.js
+      - name: Lint
+        run: npm run lint --if-present
+      - name: Tests
+        run: npm test --if-present
